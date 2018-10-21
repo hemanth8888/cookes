@@ -24,6 +24,7 @@ app.get("/", function(req, res) {
 res.cookie(name, 'value', {maxAge: 360000});*/
 
 app.get("/clear", function(req, res) {
+  console.log("Test Case 1")
   res.clearCookie("email");
   res.send("cookie email cleared");
 });
